@@ -6,6 +6,7 @@
   --background: #F5F5F5;
   --background-main-ui-elem-color: #d6cece; 
   --font-family--base: 'Inter', sans-serif;
+  --transition-duration-base: 100;
   --font-size-h1: 36px;
   --font-size-h2: 32px;
   --font-size-h3: 28px;

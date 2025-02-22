@@ -1,10 +1,6 @@
-.blog {
-  position: relative;
-  font-weight: 600;
-}
-.blogElement {
+.rightElement {
   width: 120px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #fff;
   height: 50px;
   overflow: hidden;
@@ -15,38 +11,41 @@
   justify-content: center;
   padding: 20px;
   box-sizing: border-box;
-  cursor: pointer;
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-med);
 }
 .rightElements {
-  position: absolute;
-  top: calc(50% - 25px);
-  right: 60px;
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 20px;
 }
-.Logo {
-  position: absolute;
-  top: calc(50% - 15px);
-  left: calc(50% - 143px);
-  font-weight: 600;
-}
-.logo {
-  position: absolute;
-  top: calc(50% - 25px);
-  left: 20px;
+.leftElement {
+  display: flex;
+  position: relative;
   background-color: #fff;
-  width: 308px;
-  height: 50px;
-  overflow: hidden;
-  cursor: pointer;
+  width: 100%;
+  min-height: 50px;
+  align-items: center;
+  font-weight: var(--font-weight-med);
+  font-size: var(--font-size-h4);
+  padding: 5px;
+  border-radius: 5px;
+}
+.leftElements {
+  display: flex;
+  position: relative;
+  align-items: center;
 }
 .navBar {
   width: 100%;
   position: relative;
-  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-radius: 5px;
   background-color: #d6cece;
   height: 70px;
   overflow: hidden;

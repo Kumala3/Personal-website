@@ -1,25 +1,16 @@
 import styles from "@/styles/navbar.module.css";
+import Link from "next/link";
 
 const NavBar = () => {
-    const onLogoClick = () => {
-        // add code here
-    }
-
     return (
         <div className={styles.navBar}>
-            <div className={styles.logo}>
-                <div className={styles.Logo}>Kostiantyn Sytnyk Logo</div>
+            <div className={styles.leftElements}>
+                <Link href="/" className={`${styles.leftElement} hover:scale-[1.03] duration-100`}>Kostiantyn Sytnyk Logo</Link>
             </div>
             <div className={styles.rightElements}>
-                <div className={styles.blogElement}>
-                    <div className={styles.blog}>Blog</div>
-                </div>
-                <div className={styles.blogElement}>
-                    <div className={styles.blog}>Projects</div>
-                </div>
-                <div className={styles.blogElement}>
-                    <div className={styles.blog}>Contact</div>
-                </div>
+                <Link href="/blog" className={`${styles.rightElement} hover:scale-[1.03] duration-100`}>Blog</Link>
+                <Link href="/projects" className={`${styles.rightElement} hover:scale-[1.03] duration-100`}>Projects</Link>
+                <Link href="/contact" className={`${styles.rightElement} hover:scale-[1.03] duration-100`}>Contact</Link>
             </div>
         </div>
     )
