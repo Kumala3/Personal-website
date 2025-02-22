@@ -1,0 +1,61 @@
+.skillCard {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 350px;
+  height: 180px;
+  padding: 10px;
+  border-radius: var(--skill-card-border-rd);
+  cursor: pointer;
+}
+.skillName {
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-h4);
+  max-width: 280px;
+  max-height: 30px;
+}
+.skillDescription {
+  display: -webkit-box;
+  position: relative;
+  font-weight: var(--font-weight-reg);
+  font-size: var(--font-size-body-1);
+  max-width: 300px;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.skillNameModal {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  max-width: 80%;
+}
+.skillDescriptionModal {
+  font-size: var(--font-size-body-1);
+  font-weight: var(--font-weight-reg);
+  max-width: 100%;
+}
+.relatedProjectsLabel {
+    font-size: var(--font-size-body-1);
+    font-weight: var(--font-weight-semi-bold);
+    max-width: 100%;
+    margin-top: 16px;
+}
+.relatedProjectElem {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-main-ui-elem-color);  
+    width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    color: #000;
+    font-weight: var(--font-weight-med);
+    font-size: var(--font-size-body-1);
+    margin-bottom: 10px;
+}

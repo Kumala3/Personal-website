@@ -22,6 +22,7 @@
   --font-weight-bold: 700;
   --custom--spacing--4: 4px;
   --custom--spacing--8: calc(var(--custom--spacing--4) * 2);
+  --skill-card-border-rd: 5px;
 }
 
 /*No support for dark scheme for now
