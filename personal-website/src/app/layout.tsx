@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfairDisplay.variable} flex flex-col gap-10 p-5 antialiased`}
+        className={`${inter.variable} ${playfairDisplay.variable} flex flex-col p-5 antialiased`}
       >
         <NavBar />
         {children}
