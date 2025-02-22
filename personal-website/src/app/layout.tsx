@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 /*font for body content/casual text */
@@ -29,11 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfairDisplay.variable} p-5 antialiased`}
+        className={`${inter.variable} ${playfairDisplay.variable} flex flex-col gap-10 p-5 antialiased`}
       >
         <NavBar />
         {children}
-        
+        <Footer />
       </body>
     </html>
   );
