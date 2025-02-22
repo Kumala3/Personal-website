@@ -1,10 +1,10 @@
 import Image from "next/image";
-import styles from "@/styles/home.module.css"
+import styles from "@/styles/home.module.css";
 import FeaturedBlogCard from "@/components/FeaturedBlogCard";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       {/* Hero section */}
       <div className={styles.heroSection}>
         <div className={styles.essentialInfo}>
@@ -18,8 +18,18 @@ export default function Home() {
       </div>
 
       {/* Featured blogs section */}
-      <div className="py-10">
-        <FeaturedBlogCard />
+      <div className={`${styles.featuredBlogsSection} mt-20`}>
+        <p className={styles.featuredBlogsLabel}>Featured Blogs</p>
+        <div className={styles.featuredBlogsGrid}>
+          <FeaturedBlogCard />
+          <FeaturedBlogCard />
+        </div>
+      </div>
+
+      {/* Skills & Technologies section */}
+      <div className={`${styles.skillsTechnologiesSection} mt-20`}>
+        <p className={styles.skillsTechnologiesSectionLabel}>Skills & Technologies</p>
+        {/* Skill Cards here */}
       </div>
     </div>
   );

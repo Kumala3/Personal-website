@@ -4,6 +4,7 @@
 
 :root {
   --background: #F5F5F5;
+  --main-body-color: #000;
   --background-main-ui-elem-color: #d6cece; 
   --font-family--base: 'Inter', sans-serif;
   --transition-duration-base: 100;
