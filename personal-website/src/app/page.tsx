@@ -5,7 +5,7 @@ import SkillCard from '@/components/SkillCard';
 
 export default function Home() {
   return (
-    <div className="">
+    <>
       {/* Hero section */}
       <div className={styles.heroSection}>
         <div className={styles.essentialInfo}>
@@ -94,6 +94,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 }
