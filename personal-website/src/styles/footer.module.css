@@ -45,11 +45,12 @@
   flex-direction: row;
   gap: 40px;
 }
-.footer {
+.footerContainer {
   width: 100%;
   padding: 10px;
   gap: 10px;
-  position: relative;
+  width: 100%;
+  margin-top: auto;
   align-items: center;
   background-color: var(--background-main-ui-elem-color);
   overflow: hidden;

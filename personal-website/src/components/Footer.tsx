@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
     return (
-        <div className={styles.footer}>
+        <div className={styles.footerContainer}>
             <div className={styles.sections}>
                 {/* Read & Explore section*/}
                 <div className={styles.section}>

@@ -30,11 +30,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfairDisplay.variable} flex flex-col p-5 antialiased`}
+        className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
       >
-        <NavBar />
-        {children}
-        <Footer />
+        <div className="mainContainer">
+          <NavBar />
+          <div className="mainContent">{children}</div>
+          <Footer />
+        </div>  
       </body>
     </html>
   );
