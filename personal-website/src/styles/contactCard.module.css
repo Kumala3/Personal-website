@@ -1,0 +1,19 @@
+.contactCard {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-main-ui-elem-color);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    width: 250px;
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.75);
+}
+.label {
+    font-weight: var(--font-weight-med);
+    font-size: var(--font-size-h4);
+    color: #000;
+}
