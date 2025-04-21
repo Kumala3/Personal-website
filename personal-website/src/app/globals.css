@@ -4,9 +4,9 @@
 
 :root {
   --background: #F5F5F5;
-  --main-body-color: #000;
+  --foreground: #000000;
   --background-main-ui-elem-color: #d6cece; 
-  --font-family--base: 'Inter', sans-serif;
+  --font-family--base: var(--font-tomorrow);
   --transition-duration-base: 100;
   --font-size-h1: 36px;
   --font-size-h2: 32px;
@@ -36,7 +36,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-family--base);
+  font-family: var(--font-tomorrow);
 }
 .mainContainer {
   padding: 20px;

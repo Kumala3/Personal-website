@@ -22,36 +22,26 @@
   justify-content: flex-start;
   gap: 20px;
 }
-.leftElement {
+.logo {
   display: flex;
   position: relative;
   background-color: #fff;
-  width: 100%;
-  min-height: 50px;
   align-items: center;
+  height: fit-content;
   font-weight: var(--font-weight-med);
   font-size: var(--font-size-h4);
   padding: 5px;
   border-radius: 5px;
-}
-.leftElements {
-  display: flex;
-  position: relative;
-  align-items: center;
 }
 .navBar {
   width: 100%;
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 10px;
   border-radius: 5px;
+  align-items: center;
   background-color: #d6cece;
-  height: 70px;
+  height: auto;
   overflow: hidden;
-  flex-shrink: 0;
-  text-align: left;
-  font-size: 24px;
-  color: #000;
-  font-family: Inter;
 }

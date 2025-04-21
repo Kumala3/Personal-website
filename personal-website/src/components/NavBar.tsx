@@ -4,9 +4,7 @@ import Link from "next/link";
 const NavBar = () => {
     return (
         <div className={styles.navBar}>
-            <div className={styles.leftElements}>
-                <Link href="/" className={`${styles.leftElement} hover:scale-[1.03] duration-100`}>Kostiantyn Sytnyk Logo</Link>
-            </div>
+            <Link href="/" className={`${styles.logo} hover:scale-[1.03] duration-100`}>Kostiantyn Sytnyk</Link>
             <div className={styles.rightElements}>
                 <Link href="/blog" className={`${styles.rightElement} hover:scale-[1.03] duration-100`}>Blog</Link>
                 <Link href="/projects" className={`${styles.rightElement} hover:scale-[1.03] duration-100`}>Projects</Link>

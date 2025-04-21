@@ -1,25 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Playfair_Display } from "next/font/google";
+import {inter, tomorrow, playfairDisplay} from "./fonts";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-/*font for body content/casual text */
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-/*font for titles/headings */
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Kostiantyn Sytnyk website",
-  description: "Explore Kostiantyn Sytnyk's projects, read engaging blogs about Technology, AI.",
+  title: "Kostiantyn Sytnyk's Corner",
+  description: "Explore Kostiantyn Sytnyk's innovative projects, stay up-to-date with AI, Technology",
 };
 
 export default function RootLayout({
@@ -30,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${playfairDisplay.variable} antialiased`}
+        className={`${inter.variable} ${tomorrow.variable} ${playfairDisplay.variable} antialiased`}
       >
         <div className="mainContainer">
           <NavBar />
