@@ -38,7 +38,7 @@ body {
   background: var(--background);
   font-family: var(--font-tomorrow);
 }
-.mainContainer {
+.rootContainer {
   padding: 20px;
   display: flex;
   min-height: 100vh; 

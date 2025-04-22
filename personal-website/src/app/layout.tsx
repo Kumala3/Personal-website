@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import {inter, tomorrow, playfairDisplay} from "./fonts";
-import NavBar from "@/components/NavBar";
-import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,10 +17,8 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${tomorrow.variable} ${playfairDisplay.variable} antialiased`}
       >
-        <div className="mainContainer">
-          <NavBar />
-          <div className="mainContent">{children}</div>
-          <Footer />
+        <div className="rootContainer">
+          {children}
         </div>  
       </body>
     </html>
