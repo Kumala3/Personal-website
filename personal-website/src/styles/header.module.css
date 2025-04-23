@@ -1,26 +1,27 @@
-.rightElement {
-  width: 120px;
-  border-radius: 5px;
+.navElement {
+  min-width: 100px;
+  width: fit-content;
   background-color: #fff;
-  height: 50px;
-  overflow: hidden;
-  flex-shrink: 0;
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  box-sizing: border-box;
-  font-size: var(--font-size-h4);
-  font-weight: var(--font-weight-med);
+  font-size: var(--font-size-h5);
+  border-radius: var(--border-radius-sm);
+  font-weight: var(--font-weight-reg);
 }
-.rightElements {
-  position: relative;
+.navElement:hover {
+  color: var(--primary-color);
+  transition: color 200ms linear;
+}
+.navMenu {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
   gap: 20px;
+  height: 100%;
 }
 .logo {
   display: flex;
@@ -29,19 +30,17 @@
   align-items: center;
   height: fit-content;
   font-weight: var(--font-weight-med);
-  font-size: var(--font-size-h4);
+  font-size: var(--font-size-h5);
   padding: 5px;
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
 }
 .navBar {
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: var(--border-radius-md);
   align-items: center;
   background-color: #d6cece;
-  height: auto;
-  overflow: hidden;
+  min-height: 70px;
 }
