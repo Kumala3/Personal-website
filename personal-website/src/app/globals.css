@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #F5F5F5;
+  --background-color-base: #F5F5F5;
   --foreground: #000000;
   --background-main-ui-elem-color: #d6cece; 
-  --font-family--base: var(--font-tomorrow);
+  --font-family-base: var(--font-tomorrow);
   --transition-duration-base: 100;
   --primary-color: #009B9E;
   --font-size-h1: 52px;
@@ -28,6 +28,7 @@
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 12px;
+  --shadow-primary-button: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 /*No support for dark scheme for now
@@ -40,7 +41,7 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background-color-base);
   font-family: var(--font-tomorrow);
 }
 .rootContainer {
