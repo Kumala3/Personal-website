@@ -1,7 +1,12 @@
-export default function ComingSoon () {
-    return (
-        <div>
-            Coming Soon...
-        </div>
-    )
+import styles from "@/styles/comingSoon.module.css";
+
+export default function ComingSoon() {
+  return (
+    <div className={styles.mainContainer}>
+      <p className={styles.headerText}>Coming Soon...</p>
+      <p className={styles.subheaderText}>
+        Hard work happens behind the scenes to bring you all great experience!
+      </p>
+    </div>
+  );
 }
