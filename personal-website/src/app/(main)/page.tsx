@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       {/* Hero section */}
-      <div className={styles.heroSection}>
-        <div className={styles.essentialInfo}>
-          <div className={styles.headline}>Kostiantyn Sytnyk</div>
+      <div className={styles.heroSectionContainer}>
+        <div className={styles.leftPanel}>
+          <div className={styles.nameHeader}>Kostiantyn Sytnyk</div>
           <div className={styles.shortBio}>
             I am passionate student with over 3 years of experience in
             Full-Stack Development. I specialize in TS (Next.js, React), Python
@@ -20,10 +20,10 @@ export default function Home() {
           </div>
         </div>
         <Image
-          src="/avatar-image.png"
+          src="/profile_image_26_4_2025.jpg"
           width={400}
           height={400}
-          className={styles.image}
+          className={styles.profileImage}
           alt="avatar image"
         />
       </div>

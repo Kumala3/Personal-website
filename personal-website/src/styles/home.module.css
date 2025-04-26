@@ -1,40 +1,54 @@
-.heroSection {
+.heroSectionContainer {
   width: 100%;
-  height: 500px;
-  position: relative;
+  height: fit-content;
+  padding: 16px 50px;
   background: linear-gradient(
     7.36deg,
     rgba(157, 37, 255, 0.9) 23.92%,
     rgba(0, 230, 211, 0.8)
   );
-  overflow: hidden;
   display: flex;
   flex-direction: row;
-  gap: 300px;
-  align-items: center;
+  gap: 100px;
+  align-items: start;
   justify-content: center;
+  border-radius: var(--border-radius-md);
 }
-.essentialInfo {
-  width: 400px;
+.leftPanel {
+  width: fit-content;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
 }
-.image {
+.profileImage {
   object-fit: cover;
-  position: relative;
+  width: 100%;
+  height: auto;
   display: flex;
-  border-radius: 10px;
+  border-radius: var(--border-radius-md);
 }
-.headline {
+.nameHeader {
+  width: 100%;
+  height: auto;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-h1);
   color: #fff;
 }
 .shortBio {
+  width: 100%;
+  height: auto;
   font-weight: var(--font-weight-reg);
-  font-size: var(--font-size-body-1);
+  font-size: var(--font-size-h5);
   color: #fff;
+}
+@media (max-width: 767px) {
+  .heroSectionContainer {
+    flex-direction: column;
+    height: fit-content;
+    padding: 8px;
+    gap: 5px;
+    width: 100%;
+  }
 }
 
 .featuredBlogsSection {
