@@ -58,4 +58,6 @@
   text-align: left;
   font-size: 14px;
   color: #000;
+  flex-shrink: 0;
+  flex-grow: 0;
 }

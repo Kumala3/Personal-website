@@ -6,10 +6,10 @@ export default function MainLayout ({
     children,
 }: Readonly<{children: React.ReactNode}>) {
     return (
-        <div>
+        <>
             <NavBar/>
             <div className="mainContent">{children}</div>
             <Footer/>
-        </div>
+        </>
     )
 }

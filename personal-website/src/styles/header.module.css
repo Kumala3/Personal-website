@@ -49,6 +49,8 @@
   background-color: #d6cece;
   min-height: 70px;
   height: 90px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .menuModal {
   display: none;

@@ -65,19 +65,41 @@
   }
 } */
 
+html,
 body {
   color: var(--foreground);
   background-color: var(--background-color-base);
   font-family: var(--font-tomorrow);
   font-size: var(--font-base);
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 .rootContainer {
   padding: 20px;
   display: flex;
   min-height: 100vh; 
+  width: 100%;
   flex-direction: column;
 }
+
 .mainContent {
+  flex-grow: 1;
+  height: 100%;
   padding-bottom: 40px;
   padding-top: 40px;
+}
+
+@media (max-width: 767px){
+  .rootContainer{
+    padding: 8px;
+    min-height: 100vh;
+  }
+
+  .mainContent{
+    flex-grow: 1;
+    height: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
