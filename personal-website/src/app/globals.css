@@ -3,31 +3,57 @@
 @tailwind utilities;
 
 :root {
+  /* Colors and base properties */
   --background-color-base: #F5F5F5;
   --foreground: #000000;
   --background-main-ui-elem-color: #d6cece; 
   --font-family-base: var(--font-tomorrow);
-  --transition-duration-base: 100;
+  --transition-duration-base: 200ms;
   --primary-color: #009B9E;
-  --font-size-h1: 52px;
-  --font-size-h2: 46px;
-  --font-size-h3: 40px;
-  --font-size-h4: 34px;
-  --font-size-h5: 28px;
-  --font-size-h6: 22px;
-  --font-size-body-1: 18px;
-  --font-size-body-2: 16px;
-  --font-size-body-3: 14px;
+
+  /* Base font size (in px) */
+  --font-base-value: 16;
+  --font-base: calc(var(--font-base-value) * 1px);
+
+  /* Font sizes (in em) */
+  --font-size-h1-em: calc(var(--font-size-h1-value) / var(--font-base-value) * 1em);
+
+  /* Font sizes (numeric values without units) */  
+  --font-size-h1-value: 52;
+  --font-size-h2-value: 46;
+  --font-size-h3-value: 40;
+  --font-size-h4-value: 34;
+  --font-size-h5-value: 28;
+  --font-size-h6-value: 22;
+  --font-size-body-1-value: 18;
+  --font-size-body-2-value: 16;
+  --font-size-body-3-value: 14;
+
+  --font-size-h1: calc(var(--font-size-h1-value) * 1px);
+  --font-size-h2: calc(var(--font-size-h2-value) * 1px);
+  --font-size-h3: calc(var(--font-size-h3-value) * 1px);
+  --font-size-h4: calc(var(--font-size-h4-value) * 1px);
+  --font-size-h5: calc(var(--font-size-h5-value) * 1px);
+  --font-size-h6: calc(var(--font-size-h6-value) * 1px);
+  --font-size-body-1: calc(var(--font-size-body-1-value) * 1px);
+
+  /* Font weights */
   --font-weight-light: 300;
   --font-weight-reg: 400;
   --font-weight-med: 500;
   --font-weight-semi-bold: 600;
   --font-weight-bold: 700;
-  --custom--spacing--4: 4px;
-  --custom--spacing--8: calc(var(--custom--spacing--4) * 2);
+
+  /* Spacing */
+  --custom-spacing-4: 4px;
+  --custom-spacing-8: calc(var(--custom--spacing--4) * 2);
+
+  /* Border radius */
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 12px;
+
+  /* Shadows */
   --shadow-primary-button: 0px 4px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -43,6 +69,7 @@ body {
   color: var(--foreground);
   background-color: var(--background-color-base);
   font-family: var(--font-tomorrow);
+  font-size: var(--font-base);
 }
 .rootContainer {
   padding: 20px;

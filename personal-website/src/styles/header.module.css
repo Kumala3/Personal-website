@@ -2,15 +2,13 @@
   min-width: 100px;
   width: fit-content;
   background-color: #fff;
-  height: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-h5);
+  font-size: var(--font-size-body-1);
   border-radius: var(--border-radius-sm);
-  font-weight: var(--font-weight-reg);
+  font-weight: var(--font-weight-med);
 }
 .navElement:hover {
   color: var(--primary-color);
@@ -28,10 +26,10 @@
   position: relative;
   background-color: #fff;
   align-items: center;
-  height: fit-content;
-  font-weight: var(--font-weight-med);
-  font-size: var(--font-size-h5);
-  padding: 5px;
+  height: 100%;
+  font-weight: var(--font-weight-semi-bold);
+  font-size: var(--font-size-h6);
+  padding: 8px;
   border-radius: var(--border-radius-sm);
 }
 .navBar {
@@ -43,4 +41,5 @@
   align-items: center;
   background-color: #d6cece;
   min-height: 70px;
+  height: 90px;
 }
