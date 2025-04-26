@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 5%;
+    gap: 1em;
+    border-radius: var(--border-radius-md);
+}
+.headerText {
+    color: white;
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-reg);
+}
