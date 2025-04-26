@@ -1,6 +1,6 @@
 "use client";
 import {useRouter} from "next/navigation";
-import styles from "@/styles/homeReturnButton.module.css";
+import styles from "@/styles/buttons/homeReturnButton.module.css";
 
 export function ReturnHomeButton() {
     const router = useRouter();

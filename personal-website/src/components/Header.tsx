@@ -5,7 +5,7 @@ import Link from 'next/link';
 import MenuIcon from '@/components/ui/MenuIcon';
 import CloseIcon from '@/components/ui/CloseIcon';
 import { useState } from 'react';
-import MobileNavElem from "@/components/ui/MobileNavElem";
+import MobileNavElem from "@/components/MobileNavElem";
 
 const NavBar = () => {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);

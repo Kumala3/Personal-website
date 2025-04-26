@@ -68,6 +68,29 @@
   font-size: var(--font-size-h4);
 }
 
+.featuredProjectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  hight: fit-content;
+  background-color: #d6cece;
+  padding: 16px;
+}
+.featuredProjectsTitle {
+  color: black;
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-med);
+}
+.featuredProjectsGrid {
+  display: flex;
+  background-color: red;
+  flex-direction: row;
+  width: 100%;
+  height: fit-content;
+  justify-content: space-between;
+}
+
 .skillsTechnologiesSection {
   display: flex;
   flex-direction: column;

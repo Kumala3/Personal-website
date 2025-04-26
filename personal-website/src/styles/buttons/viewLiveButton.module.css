@@ -1,0 +1,17 @@
+.container {
+    border-width: 2px;
+    border-color: black;
+    border-radius: var(--border-radius-sm);
+    width: fit-content;
+    min-height: 35px;
+    height: fit-content;
+    padding: 4x 8px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+}
+.buttonText {
+    font-size: var(--font-size-body-1);
+    font-weight: var(--font-weight-med);
+}
