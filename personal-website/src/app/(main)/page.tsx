@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import styles from '@/styles/home.module.css';
-import FeaturedBlogCard from '@/components/FeaturedBlogCard';
 import SkillCard from '@/components/SkillCard';
 import { ProjectCard } from '@/components/ProjectCard';
+import { BlogCard } from '@/components/BlogCard';
 
 export default function Home() {
   return (
@@ -12,12 +12,11 @@ export default function Home() {
         <div className={styles.leftPanel}>
           <div className={styles.nameHeader}>Kostiantyn Sytnyk</div>
           <div className={styles.shortBio}>
-            I am passionate student with over 3 years of experience in
-            Full-Stack Development. I specialize in TS (Next.js, React), Python
-            (Django, Flask). I am enthusiastic about AI, Game-Dev, workflow
-            automations. I am also a content creator at the AIA Advantage Team.
-            I am organized, determined and sociable person with a love of
-            solving problems and overcoming challenges!
+            I am a Young Entrepneur with a passion for AI, Technology & GameDev.
+            I am technical person with deep knowledge of GenAI, Unity and
+            creating modern, scalable Full-Stack web-apps. I am organized,
+            determined and very sociable person with a love of learning and
+            focus on finding & implementing innovative solutions!
           </div>
         </div>
         <Image
@@ -31,10 +30,20 @@ export default function Home() {
 
       {/* Featured Blogs Section */}
       <div className={`${styles.featuredBlogsContainer}`}>
-        <p className={styles.featuredBlogsLabel}>Featured Blogs</p>
+        <p className={styles.featuredBlogsTitle}>Featured Blogs</p>
         <div className={styles.featuredBlogsGrid}>
-          <FeaturedBlogCard />
-          <FeaturedBlogCard />
+          <BlogCard
+            title="Musk’s xAI Holdings is reportedly raising the second-largest private funding round ever"
+            description="The funding could help alleviate X’s substantial debt burden, which is costing the company a whopping $200 million monthly in servicing fees, per Bloomberg’s sources, with annual interest expenses exceeding $1.3 billion by the end of last year.A raise of this size would also showcase AI’s continued investor appeal, as well as reflect Musk’s surprising emergence as a political power player inside President Trump’s White House."
+            featuredImageURL="https://images.unsplash.com/photo-1644088379091-d574269d422f?q=80&w=1993&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            isFeatured={true}
+          />
+          <BlogCard
+            title="Chinese AI startup Manus reportedly gets funding from Benchmark at $500M valuation"
+            description="Bloomberg’s report suggests that the fresh round has quintupled the valuation of Manus, which previously raised somewhere north of $10 million from backers including Tencent and HSG (formerly Sequoia China).Manus came into the spotlight in March when the company launched a demo of a general AI agent that could complete various tasks. (In TechCrunch’s testing, it didn’t work quite as well as advertised.) The company later launched paid subscription plans costing between $39 per month and $199 per month."
+            featuredImageURL="https://techcrunch.com/wp-content/uploads/2024/02/GettyImages-1424498694.jpg?resize=1280,853"
+            isFeatured={true}
+          />
         </div>
       </div>
 
@@ -62,7 +71,7 @@ export default function Home() {
       </div>
 
       {/* Skills & Technologies section */}
-      <div className={`${styles.skillsTechnologiesSection}`}>
+      <div className={`${styles.skillsTechnologiesContainer}`}>
         <p className={styles.skillsTechnologiesSectionLabel}>
           Skills & Technologies
         </p>
