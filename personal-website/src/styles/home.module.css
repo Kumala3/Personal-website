@@ -1,3 +1,9 @@
+.container{ 
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+}
+
 .heroSectionContainer {
   width: 100%;
   height: fit-content;
@@ -51,8 +57,8 @@
   }
 }
 
-.featuredBlogsSection {
-  background-color: #d6cece;
+.featuredBlogsContainer {
+  background-color: var(--background-container-color);
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -74,8 +80,9 @@
   gap: 10px;
   width: 100%;
   hight: fit-content;
-  background-color: #d6cece;
+  background-color: var(--background-container-color);
   padding: 16px;
+  border-radius: var(--border-radius-lg);
 }
 .featuredProjectsTitle {
   color: black;
@@ -84,10 +91,10 @@
 }
 .featuredProjectsGrid {
   display: flex;
-  background-color: red;
   flex-direction: row;
+  gap: 30px;
   width: 100%;
-  height: fit-content;
+  height: 450px;
   justify-content: space-between;
 }
 
@@ -100,7 +107,7 @@
 }
 .skillsTechnologiesSectionLabel {
   font-weight: var(--font-weight-semi-bold);
-  font-size: var(--font-size-h4);
+  font-size: var(--font-size-h3);
 }
 .skillsTechnologiesLayout {
   display: flex;

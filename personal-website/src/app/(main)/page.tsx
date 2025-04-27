@@ -6,7 +6,7 @@ import { ProjectCard } from '@/components/ProjectCard';
 
 export default function Home() {
   return (
-    <>
+    <div className={`${styles.container}`}>
       {/* Hero section */}
       <div className={styles.heroSectionContainer}>
         <div className={styles.leftPanel}>
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
 
       {/* Featured Blogs Section */}
-      <div className={`${styles.featuredBlogsSection} mt-20`}>
+      <div className={`${styles.featuredBlogsContainer}`}>
         <p className={styles.featuredBlogsLabel}>Featured Blogs</p>
         <div className={styles.featuredBlogsGrid}>
           <FeaturedBlogCard />
@@ -39,32 +39,30 @@ export default function Home() {
       </div>
 
       {/* Featured Projects Section */}
-      <div className={`${styles.featuredProjectsContainer} mt-20`}>
+      <div className={`${styles.featuredProjectsContainer}`}>
         <p className={`${styles.featuredProjectsTitle}`}>Featured Projects</p>
         <div className={`${styles.featuredProjectsGrid}`}>
           <ProjectCard
             title="ChatGPT History"
-            description="Find out how ChatGPT went from 100K users to 300M monthly users. Dive deep into exploration of all product updates, new features, models, tools, new related products with a great timeline. See how old UI looked like and more!"
+            description="Find out how ChatGPT went from 100K users to 30ind out how ChatGPT went from 100K users to 300M monthly users. Dive dee0M monthly users. Dive deep into exploration of all product updates, new features, models, tools, new related products with a great timeline. See how old UI looked like and more!"
             imageURL="https://images.unsplash.com/photo-1676299081847-824916de030a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             liveURL="https://yaytext.com/"
+            githubRepoURL="https://github.com/Kumala3"
+            isFeatured={true}
           />
           <ProjectCard
             title="Personal Website"
-            description="A modern, responsive portfolio website built with Next.js and Tailwind CSS to showcase my projects, skills, and blog articles."
+            description="A moderind out how ChatGPT went from 100K users to 300M monthly users. Dive deen, responsive portfolio website built with Next.js and Tailwind CSS to showcase my projects, skills, and blog articderind out how ChatGPT went from 100K users to 300M monthly users. Dive deen, responsive portfolio website built with Next.js and Tailwind CSS to showcase my projects, skills, and blog articleles."
             imageURL="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1024&q=80"
             liveURL="https://yourwebsite.com/"
+            githubRepoURL="https://github.com/Kumala3"
+            isFeatured={true}
           />
-          {/* <ul>
-            <li>hello</li>
-            <li>my</li>
-            <li>friend</li>
-            <li>:)</li>
-          </ul> */}
         </div>
       </div>
 
       {/* Skills & Technologies section */}
-      <div className={`${styles.skillsTechnologiesSection} mt-20`}>
+      <div className={`${styles.skillsTechnologiesSection}`}>
         <p className={styles.skillsTechnologiesSectionLabel}>
           Skills & Technologies
         </p>
@@ -120,6 +118,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }

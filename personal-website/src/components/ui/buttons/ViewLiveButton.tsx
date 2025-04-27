@@ -1,4 +1,4 @@
-import Link from "next/link";
+"use client";
 import styles from "@/styles/buttons/viewLiveButton.module.css";
 import { GlobalIcon } from "@/components/ui/GlobalIcon";
 
@@ -7,10 +7,14 @@ interface ViewLiveButtonProps {
 }
 
 export function ViewLiveButton({liveURL}: ViewLiveButtonProps) {
+    const handleViewLive = (liveURL: string) => {
+        window.open(liveURL, "_blank", "noopener, noreferrer");
+    }
+
     return (
-        <Link href={liveURL} target="_blank" rel="noreferrer" className={`${styles.container}`}>
+        <button onClick={() => handleViewLive(liveURL)} className={`${styles.container}`}>
             <GlobalIcon className={`${styles.icon}`} />
-            <p>View Live</p>
-        </Link>
+            View Live
+        </button>
     )
 }

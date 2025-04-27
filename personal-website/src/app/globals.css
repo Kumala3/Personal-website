@@ -6,7 +6,7 @@
   /* Colors and base properties */
   --background-color-base: #F5F5F5;
   --foreground: #000000;
-  --background-main-ui-elem-color: #d6cece; 
+  --background-container-color: #d6cece; 
   --font-family-base: var(--font-tomorrow);
   --transition-duration-base: 200ms;
   --primary-color: #009B9E;
@@ -36,6 +36,8 @@
   --font-size-h5: calc(var(--font-size-h5-value) * 1px);
   --font-size-h6: calc(var(--font-size-h6-value) * 1px);
   --font-size-body-1: calc(var(--font-size-body-1-value) * 1px);
+  --font-size-body-2: calc(var(--font-size-body-2-value) * 1px);
+  --font-size-body-3: calc(var(--font-size-body-3-value) * 1px);
 
   /* Font weights */
   --font-weight-light: 300;

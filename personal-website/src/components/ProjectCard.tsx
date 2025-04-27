@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import styles from '@/styles/projectCard.module.css';
 import { ViewLiveButton } from './ui/buttons/ViewLiveButton';
+import { ReadFullButton } from './ui/buttons/ReadFullButton';
+import { GitHubRepoButton } from './ui/buttons/GitHubRepoButton';
 
 interface ProjectCardProps {
   imageURL: string;
@@ -8,7 +10,7 @@ interface ProjectCardProps {
   title: string;
   description: string;
   liveURL?: string;
-  githubURL?: string;
+  githubRepoURL?: string;
 }
 
 export function ProjectCard({
@@ -17,28 +19,28 @@ export function ProjectCard({
   isFeatured = false,
   description,
   liveURL,
-  githubURL,
+  githubRepoURL,
 }: ProjectCardProps) {
   return (
     <div className={`${styles.container}`}>
-        <Image
+      <Image
         src={imageURL}
         width={600}
         height={200}
         alt="Featured Image"
         className={`${styles.featuredImage}`}
-        />
-        <div className={`${styles.infoSection}`}>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        </div>
-        <div className={`${styles.actionButtons}`}>
+      />
+      <div className={`${styles.infoSection}`}>
+        <h3 className={`${styles.title} ${isFeatured ? styles.titleFeatured : ""}`}>{title}</h3>
+        <p className={`${styles.description}`}>{description}</p>
+      </div>
+      <div className={`${styles.actionButtons}`}>
+        <ReadFullButton title={title} />
         {/* Checking if liveURL is provided */}
-        {liveURL && (
-            <ViewLiveButton liveURL={liveURL} />
-        )}
+        {liveURL && <ViewLiveButton liveURL={liveURL} />}
+        {githubRepoURL && <GitHubRepoButton githubRepoURL={githubRepoURL} />}
         {/* ReadFullButton, View Live Button, GitHubRepo Button*/}
-        </div>
+      </div>
     </div>
   );
 }

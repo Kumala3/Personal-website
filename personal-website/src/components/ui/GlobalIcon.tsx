@@ -9,7 +9,7 @@ interface GlobalIconProps {
 export function GlobalIcon({width = 24, height = 24, className = ""}: GlobalIconProps) {
     return (
         <>
-            <Image src={"/"} className={`${className}`} width={width} height={height} alt="Global Icon" />
+            <Image src={"/global-icon.svg"} className={`${className}`} width={width} height={height} alt="Global Icon" />
         </>
     )
 }
