@@ -7,7 +7,7 @@ import { BlogCard } from '@/components/BlogCard';
 export default function Home() {
   return (
     <div className={`${styles.container}`}>
-      {/* Hero section */}
+      {/* Hero Section */}
       <div className={styles.heroSectionContainer}>
         <div className={styles.leftPanel}>
           <div className={styles.nameHeader}>Kostiantyn Sytnyk</div>
@@ -70,61 +70,66 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Skills & Technologies section */}
+      {/* Skills & Technologies Section */}
       <div className={`${styles.skillsTechnologiesContainer}`}>
-        <p className={styles.skillsTechnologiesSectionLabel}>
-          Skills & Technologies
-        </p>
-        {/* Skill Cards here */}
-        <div className={styles.skillsTechnologiesLayout}>
-          <SkillCard
-            skillName="Next.js"
-            skillDescription="I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app. I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app."
-            relatedProjects={[
-              { projectTitle: 'SynapseFlow', projectId: 2121 },
-              { projectTitle: 'EcoBuddy', projectId: 21 },
-            ]}
-          />
-          <SkillCard
-            skillName="Django"
-            skillDescription="I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app. I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app."
-            relatedProjects={[
-              { projectTitle: 'SynapseFlow', projectId: 2121 },
-              { projectTitle: 'EcoBuddy', projectId: 21 },
-            ]}
-          />
-          <SkillCard
-            skillName="Django"
-            skillDescription="I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app. I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app."
-            relatedProjects={[
-              { projectTitle: 'SynapseFlow', projectId: 2121 },
-              { projectTitle: 'EcoBuddy', projectId: 21 },
-            ]}
-          />
-          <SkillCard
-            skillName="Django"
-            skillDescription="I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app. I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app."
-            relatedProjects={[
-              { projectTitle: 'SynapseFlow', projectId: 2121 },
-              { projectTitle: 'EcoBuddy', projectId: 21 },
-            ]}
-          />
-          <SkillCard
-            skillName="Django"
-            skillDescription="I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app. I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app."
-            relatedProjects={[
-              { projectTitle: 'SynapseFlow', projectId: 2121 },
-              { projectTitle: 'EcoBuddy', projectId: 21 },
-            ]}
-          />
-          <SkillCard
-            skillName="Django"
-            skillDescription="I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app. I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app."
-            relatedProjects={[
-              { projectTitle: 'SynapseFlow', projectId: 2121 },
-              { projectTitle: 'EcoBuddy', projectId: 21 },
-            ]}
-          />
+        {/* Skills Section */}
+        <div className={styles.skillsContainer}>
+          <p className={styles.skillsSectionTitle}>Skills</p>
+          <div className={styles.skillsGrid}>
+            <SkillCard
+              title="Critical Thinking"
+              size="small"
+              description="I tackle problems by deeply analyzing the problem, finding & checking different paths to solve a problem."
+              relatedProjects={[
+                { projectTitle: 'SynapseFlow', projectId: 1 },
+                { projectTitle: 'EcoBuddy', projectId: 2 },
+              ]}
+            />
+            <SkillCard
+              title="Efficient Communication"
+              size="small"
+              description="I am an effective communicator with active listening skill sharpened that allows me to deeply understand the problem/needs and execute further."
+              relatedProjects={[
+                { projectTitle: 'SynapseFlow', projectId: 1 },
+                { projectTitle: 'EcoBuddy', projectId: 2 },
+              ]}
+            />
+            <SkillCard
+              title="Problem Solving"
+              size="small"
+              description="I am solving problem with different approaches by researching, analyzing, evaluating"
+              relatedProjects={[
+                { projectTitle: 'SynapseFlow', projectId: 1 },
+                { projectTitle: 'EcoBuddy', projectId: 2 },
+              ]}
+            />
+            <SkillCard
+              title="Time Management"
+              size="small"
+              description="I have been applying dozens of different time management methods to manage my time better for productivity boost."
+              relatedProjects={[
+                { projectTitle: 'SynapseFlow', projectId: 1 },
+                { projectTitle: 'EcoBuddy', projectId: 2 },
+              ]}
+            />
+            <SkillCard
+              title="Time Management"
+              size="small"
+              description="I have been applying dozens of different time management methods to manage my time better for productivity boost."
+              relatedProjects={[
+                { projectTitle: 'SynapseFlow', projectId: 1 },
+                { projectTitle: 'EcoBuddy', projectId: 2 },
+              ]}
+            />
+          </div>
+        </div>
+
+        {/* Technologies Section */}
+        <div className={styles.technologiesContainer}>
+          <p className={styles.technologiesSectionTitle}>Technologies</p>
+          <div className={styles.technologiesGrid}>
+            {/* Technologies Cards go here */}
+          </div>
         </div>
       </div>
     </div>

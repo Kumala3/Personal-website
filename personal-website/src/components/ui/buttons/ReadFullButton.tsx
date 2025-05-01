@@ -1,21 +1,21 @@
 'use client';
 import styles from '@/styles/buttons/readFullButton.module.css';
-import { EyeIcon } from '@/components/ui/EyeIcon';
+import { EyeIcon } from '@/components/ui/icons/EyeIcon';
 
 interface ReadFullButtonProps {
-  title: string;
+  onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  size: "large" | "small";
 }
 
-export function ReadFullButton({ title }: ReadFullButtonProps) {
-  const handleReadFull = (title: string) => {
-    // redirect to the project page
-  };
+export function ReadFullButton({ size, onClick }: ReadFullButtonProps) {
+  const containerClassName = size === "small" ? styles.containerSmall : styles.container;
+  const iconClassName = size === "small" ? styles.iconSmall : styles.icon;
 
   return (
     <button
-      onClick={() => handleReadFull(title)}
-      className={`${styles.container}`}>
-      <EyeIcon className={`${styles.icon}`} />
+      onClick={onClick}
+      className={containerClassName}>
+      <EyeIcon className={iconClassName} />
       Read Full
     </button>
   );

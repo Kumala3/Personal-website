@@ -18,6 +18,27 @@
     width: 50px;
     height: 50px;
 }
+
+.containerSmall {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-width: 2px;
+    border-color: black;
+    border-radius: var(--border-radius-sm);
+    width: fit-content;
+    min-height: 35px;
+    height: fit-content;
+    gap: 10px;
+    padding: 6px;
+    font-weight: var(--font-weight-med);
+    align-items: center;
+}
+.iconSmall {
+    width: 40px;
+    height: 40px;
+}
+
 @media (max-width: 767px) {
     .container {
         font-size: var(--font-size-body-2);
