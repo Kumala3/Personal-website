@@ -1,6 +1,6 @@
 "use client";
 import styles from "@/styles/buttons/viewLiveButton.module.css";
-import { GlobalIcon } from "@/components/ui/GlobalIcon";
+import { GlobalIcon } from "@/components/ui/icons/GlobalIcon";
 
 interface ViewLiveButtonProps {
     liveURL: string;

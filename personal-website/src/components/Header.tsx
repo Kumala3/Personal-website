@@ -2,8 +2,8 @@
 
 import styles from '@/styles/header.module.css';
 import Link from 'next/link';
-import MenuIcon from '@/components/ui/MenuIcon';
-import CloseIcon from '@/components/ui/CloseIcon';
+import MenuIcon from '@/components/ui/icons/MenuIcon';
+import CloseIcon from '@/components/ui/icons/CloseIcon';
 import { useState } from 'react';
 import MobileNavElem from "@/components/MobileNavElem";
 
