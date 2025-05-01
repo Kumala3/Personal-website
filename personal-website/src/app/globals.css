@@ -28,6 +28,7 @@
   --font-size-body-1-value: 18;
   --font-size-body-2-value: 16;
   --font-size-body-3-value: 14;
+  --font-size-body-4-value: 12;
 
   --font-size-h1: calc(var(--font-size-h1-value) * 1px);
   --font-size-h2: calc(var(--font-size-h2-value) * 1px);
@@ -38,6 +39,7 @@
   --font-size-body-1: calc(var(--font-size-body-1-value) * 1px);
   --font-size-body-2: calc(var(--font-size-body-2-value) * 1px);
   --font-size-body-3: calc(var(--font-size-body-3-value) * 1px);
+  --font-size-body-4: calc(var(--font-size-body-4-value) * 1px);
 
   /* Font weights */
   --font-weight-light: 300;
@@ -101,7 +103,7 @@ body {
   .mainContent{
     flex-grow: 1;
     height: 100%;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
   }
 }

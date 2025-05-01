@@ -1,63 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 1rem 0.2rem 1rem;
+  gap: 1rem;
+  width: 100%;
+  background-color: var(--background-container-color);
+}
+.sections {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.sectionContainer {
+  min-width: 300px;
+  border-radius: var(--border-radius-sm);
+  background-color: white;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 10px;
+}
+.sectionLabel {
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-semi-bold);
+}
+.navElements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 .rightsReserved {
   display: flex;
   justify-content: center;
-}
-.singleElement {
-  align-self: stretch;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.35);
-  border-radius: 3px;
-  background-color: #fff;
-  overflow: hidden;
-  display: flex;
-  width: 100px;
+  font-weight: var(--font-weight-reg);
   font-size: var(--font-size-body-2);
-  flex-direction: row;
-  justify-content: start;
-  padding: 5px;
 }
-.elements {
-  position: relative;
-  width: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 10px;
-}
-.sectionLabel {
-  position: relative;
-  font-size: 18px;
-  font-weight: 600;
-}
-.section {
-  min-width: 200px;
-  border-radius: 3px;
-  background-color: #fff;
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 10px;
-}
-.sections {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-.footerContainer {
-  width: 100%;
-  padding: 10px;
-  gap: 10px;
-  width: 100%;
-  margin-top: auto;
-  align-items: center;
-  background-color: var(--background-main-ui-elem-color);
-  overflow: hidden;
-  flex-shrink: 0;
-  text-align: left;
-  font-size: 14px;
-  color: #000;
-  flex-shrink: 0;
-  flex-grow: 0;
+
+@media (max-width: 767px) {
+  .sections{
+    flex-direction: column;
+  }
+  .rightsReserved {
+    font-size: var(--font-size-body-3);
+  }
 }

@@ -1,0 +1,20 @@
+.container {
+  border-radius: var(--border-radius-sm);
+  border-width: 2px;
+  border-color: black;
+  background-color: white;
+  display: flex;
+  min-width: 150px;
+  width: fit-content;
+  padding: 0.5rem;
+}
+.text {
+  font-weight: var(--font-weight-med);
+  font-size: var(--font-size-body-1);
+}
+
+@media (max-width: 767px) {
+  .text{
+    font-size: var(--font-size-body-2);
+  }
+}
