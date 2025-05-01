@@ -3,6 +3,7 @@ import styles from '@/styles/home.module.css';
 import SkillCard from '@/components/SkillCard';
 import { ProjectCard } from '@/components/ProjectCard';
 import { BlogCard } from '@/components/BlogCard';
+import { TechnologyCard } from '@/components/TechnologyCard';
 
 export default function Home() {
   return (
@@ -77,7 +78,7 @@ export default function Home() {
           <p className={styles.skillsSectionTitle}>Skills</p>
           <div className={styles.skillsGrid}>
             <SkillCard
-              title="Critical Thinking"
+              name="Critical Thinking"
               size="small"
               description="I tackle problems by deeply analyzing the problem, finding & checking different paths to solve a problem."
               relatedProjects={[
@@ -86,7 +87,7 @@ export default function Home() {
               ]}
             />
             <SkillCard
-              title="Efficient Communication"
+              name="Efficient Communication"
               size="small"
               description="I am an effective communicator with active listening skill sharpened that allows me to deeply understand the problem/needs and execute further."
               relatedProjects={[
@@ -95,7 +96,7 @@ export default function Home() {
               ]}
             />
             <SkillCard
-              title="Problem Solving"
+              name="Problem Solving"
               size="small"
               description="I am solving problem with different approaches by researching, analyzing, evaluating"
               relatedProjects={[
@@ -104,7 +105,7 @@ export default function Home() {
               ]}
             />
             <SkillCard
-              title="Time Management"
+              name="Time Management"
               size="small"
               description="I have been applying dozens of different time management methods to manage my time better for productivity boost."
               relatedProjects={[
@@ -113,7 +114,7 @@ export default function Home() {
               ]}
             />
             <SkillCard
-              title="Time Management"
+              name="Time Management"
               size="small"
               description="I have been applying dozens of different time management methods to manage my time better for productivity boost."
               relatedProjects={[
@@ -128,7 +129,22 @@ export default function Home() {
         <div className={styles.technologiesContainer}>
           <p className={styles.technologiesSectionTitle}>Technologies</p>
           <div className={styles.technologiesGrid}>
-            {/* Technologies Cards go here */}
+            <TechnologyCard
+              name="NextJS"
+              description="1.5+ year of experience in building modern, responsive, dynamic web apps with Next.js. Some of my projects include fitness web app.I have over 1+ of experience in building modern, responsive & dynamic web apps with Next.js. I’ve built projects like fitness web app."
+            />
+            <TechnologyCard
+              name="Django"
+              description="2.5+ year of experience with using Django for modern, responsive web-apps."
+            />
+            <TechnologyCard
+              name="PostgreSQL"
+              description="2+ years of experiencing building modern web-apps with PostgreSQL database for effective database management system."
+            />
+            <TechnologyCard
+              name="PostgreSQL"
+              description="2+ years of experiencing building modern web-apps with PostgreSQL database for effective database management system."
+            />
           </div>
         </div>
       </div>

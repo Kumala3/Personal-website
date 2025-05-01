@@ -13,8 +13,6 @@ export function SkillIcon({
   height = 24,
   className = '',
 }: SkillIconProps) {
-  console.log(`Name gotten in SkillIcon func: ${name}`);
-
   const namePath = (name: string) => {
     switch (name) {
       case 'Critical Thinking':

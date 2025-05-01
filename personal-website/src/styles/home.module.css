@@ -109,7 +109,7 @@
 .skillsContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
 }
 .skillsSectionTitle {
   font-weight: var(--font-weight-med);
@@ -118,28 +118,26 @@
 .skillsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  flex-direction: row;
   width: 100%;
   height: fit-content;
-  flex-wrap: wrap;
   gap: 1.5rem;
 }
 
 .technologiesContainer {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5rem;
 }
 .technologiesSectionTitle {
   font-weight: var(--font-weight-med);
   font-size: var(--font-size-h4);
 }
 .technologiesGrid{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100%;
   height: fit-content;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 @media (max-width: 767px) {

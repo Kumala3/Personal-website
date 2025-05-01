@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import styles from '@/styles/skillCard.module.css';
 import { IoArrowForwardCircleOutline } from 'react-icons/io5';
 import { ReadFullButton } from '@/components/ui/buttons/ReadFullButton';
-import { SkillIcon } from '@/components/ui/icons/SkillsIcons';
+import { SkillIcon } from '@/components/ui/icons/SkillIcon';
 
 interface RelatedProject {
   projectTitle: string;
@@ -12,15 +12,13 @@ interface RelatedProject {
 }
 
 interface SkillCardProps {
-  size?: 'large' | 'small';
-  title: string;
+  name: string;
   description: string;
   relatedProjects?: RelatedProject[];
 }
 
 const SkillCard = ({
-  size = 'large',
-  title,
+  name,
   description,
   relatedProjects,
 }: SkillCardProps) => {
@@ -36,24 +34,24 @@ const SkillCard = ({
   };
 
   const skillIcon = (title: string) => {
-    return <SkillIcon name={title} className={styles.iconSkill} />;
+    return <SkillIcon name={title} className={styles.skillIcon} />;
   };
 
   return (
     <>
       <div className={styles.cardContainer}>
         <div className={styles.cardTopLayout}>
-          {skillIcon(title)}
-          <p className={styles.title}>{title}</p>
+          {skillIcon(name)}
+          <p className={styles.title}>{name}</p>
         </div>
         <p className={styles.skillCardDescription}>{description}</p>
-        <ReadFullButton size={size} onClick={handleOpenCard} />
+        <ReadFullButton size="small" onClick={handleOpenCard} />
       </div>
 
       {isModalOpen && (
         <div className="fixed inset-0 z-10 bg-gray-800/75 flex items-center justify-center">
           <div className="bg-white w-[80%] h-[50%] p-5 rounded-lg">
-            <h2 className={styles.skillNameModal}>{title}</h2>
+            <h2 className={styles.skillNameModal}>{name}</h2>
             <p className={styles.skillDescriptionModal}>{description}</p>
             {/* Related projects section */}
             <div className={styles.relatedProjectsContainer}>

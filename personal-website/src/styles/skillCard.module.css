@@ -4,8 +4,8 @@
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  padding: 8px;
   border-radius: var(--border-radius-sm);
+  padding: 0.7rem;
   gap: 0.5rem;
 }
 .cardTopLayout {
@@ -19,8 +19,6 @@
 .title {
   font-weight: var(--font-weight-med);
   font-size: var(--font-size-body-1);
-  width: 100%;
-  height: fit-content;
 }
 .skillIcon{
   width: 40px;
