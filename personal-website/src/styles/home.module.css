@@ -102,9 +102,10 @@
 .skillsTechnologiesContainer {
   display: flex;
   flex-direction: column;
-  padding: 16px;
+  padding: 1rem;
   background-color: var(--background-container-color);
   gap: 30px;
+  border-radius: var(--border-radius-lg);
 }
 .skillsContainer {
   display: flex;
@@ -173,5 +174,19 @@
     flex-direction: column;
     height: 100%;
     overflow-y: auto;
+  }
+
+  .skillsTechnologiesContainer {
+    padding: 0.5rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .technologiesGrid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 }
