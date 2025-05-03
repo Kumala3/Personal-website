@@ -4,21 +4,23 @@
 
 :root {
   /* Colors and base properties */
-  --background-color-base: #F5F5F5;
+  --background-color-base: #f5f5f5;
   --foreground: #000000;
-  --background-container-color: #d6cece; 
+  --background-container-color: #d6cece;
   --font-family-base: var(--font-tomorrow);
   --transition-duration-base: 200ms;
-  --primary-color: #009B9E;
+  --primary-color: #009b9e;
 
   /* Base font size (in px) */
   --font-base-value: 16;
   --font-base: calc(var(--font-base-value) * 1px);
 
   /* Font sizes (in em) */
-  --font-size-h1-em: calc(var(--font-size-h1-value) / var(--font-base-value) * 1em);
+  --font-size-h1-em: calc(
+    var(--font-size-h1-value) / var(--font-base-value) * 1em
+  );
 
-  /* Font sizes (numeric values without units) */  
+  /* Font sizes (numeric values without units) */
   --font-size-h1-value: 52;
   --font-size-h2-value: 46;
   --font-size-h3-value: 40;
@@ -82,7 +84,7 @@ body {
 .rootContainer {
   padding: 20px;
   display: flex;
-  min-height: 100vh; 
+  min-height: 100vh;
   width: 100%;
   flex-direction: column;
 }
@@ -94,13 +96,13 @@ body {
   padding-top: 40px;
 }
 
-@media (max-width: 767px){
-  .rootContainer{
+@media (max-width: 767px) {
+  .rootContainer {
     padding: 8px;
     min-height: 100vh;
   }
 
-  .mainContent{
+  .mainContent {
     flex-grow: 1;
     height: 100%;
     padding-bottom: 3rem;

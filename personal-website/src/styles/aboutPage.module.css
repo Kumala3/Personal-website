@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.mainHeadline {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--primary-color);
+}
+.headline {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-semi-bold);
+  color: var(--primary-color);
+}
+.subHeadline {
+  color: black;
+  font-weight: var(--font-weight-reg);
+  font-size: var(--font-size-body-1);
+}
+
+.currentPassionSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textQuote {
+  font-style: italic;
+  color: var(--secondary-color);
+  border-left: 6px solid var(--primary-color);
+  padding-left: 1.5rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+  text-align: left;
+  font-weight: var(--font-weight-reg);
+  font-size: var(--font-size-body-1);
+  max-width: 50%;
+  width: 100%;
+}
+
+.genAIToolsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.funFactsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

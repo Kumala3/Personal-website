@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  overflow-x: auto;
+  padding: 2rem;
+}
+
+/* Hide scrollbar for Chrome, Opera, Safari */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox, IE, Edge */
+.container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.timelineWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: fit-content;
+  position: relative;
+}
+.cardsContainer {
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+  min-width: max-content; /* Ensure cards don't shrink */
+  height: 280px;
+}
+.timelineBar {
+  display: flex;
+  position: relative;
+  background-color: #d3d3d3;
+  border-radius: var(--border-radius-sm);
+  width: 100%;
+  height: 40px;
+}
+.timelinePoint {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #838383;
+  border: 3px solid;
+  border-color: var(--primary-color);
+  box-shadow: 0px 0px 4px 0px var(--primary-color);
+}
+
+.timelinePoint:nth-child(1) {
+  left: 0%;
+}
+.timelinePoint:nth-child(2) {
+  left: 30%;
+}
+.timelinePoint:nth-child(3) {
+  left: 60%;
+}
+.timelinePoint:nth-child(4) {
+  left: 90%;
+}

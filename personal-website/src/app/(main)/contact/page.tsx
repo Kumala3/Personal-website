@@ -1,6 +1,6 @@
 import ContactCard from "@/components/ContactCard"
 
-export default function Contact() {
+export default function ContactPage() {
     return (
         <>
             <div className="flex flex-row gap-24">

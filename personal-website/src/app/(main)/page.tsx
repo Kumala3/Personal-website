@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import styles from '@/styles/home.module.css';
+import styles from '@/styles/homePage.module.css';
 import SkillCard from '@/components/SkillCard';
 import { ProjectCard } from '@/components/ProjectCard';
 import { BlogCard } from '@/components/BlogCard';
 import { TechnologyCard } from '@/components/TechnologyCard';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <div className={`${styles.container}`}>
       {/* Hero Section */}
