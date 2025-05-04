@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+  --white: #fff;
+  --black: #323135;
+  --crystal: #a8dadd;
+  --columbia-blue: #cee9e4;
+  --midnight-green: #01565b;
+  --yellow: #e5f33d;
+  --timeline-gradient: rgba(206, 233, 228, 1) 0%, rgba(206, 233, 228, 1) 50%,
+    rgba(206, 233, 228, 0) 100%;
+}
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timelineContainer {
+  position: relative;
+  white-space: nowrap;
+  max-width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.timelineContainer::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--timeline-gradient));
+}
+
+.timelineWrapper::-webkit-scrollbar {
+  height: 120px;
+}
+
+.timelineWrapper::-webkit-scrollbar-thumb,
+.timelineWrapper::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.timelineWrapper::-webkit-scrollbar-thumb {
+  background: red;
+}
+
+.timelineWrapper::-webkit-scrollbar-track {
+  background: red;
+}
+
+.timelineWrapper {
+  font-size: 0;
+  padding: 17rem 0;
+  transition: all 10s;
+  overflow-x: scroll;
+  scroll-snap-type: none;
+  scrollbar-color: red;
+}
+
+.cardWrapper {
+  position: relative;
+  display: inline-block;
+  list-style-type: none;
+  width: 250px;
+  height: 8px;
+  background: green;
+  scroll-snap-align: start;
+}
+
+/* Space Between Cards */
+.cardWrapper:not(:first-child) {
+  margin-left: 0px;
+}
+
+/* Tail For Intuitive Continuation */
+.cardWrapper:last-child {
+  width: 450px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.cardWrapper:first-child {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+/* Timeline Point */
+.cardWrapper:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: calc(100%);
+  bottom: 0;
+  width: 24px;
+  height: 24px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: red;
+  z-index: 1;
+  margin-right: -24px;
+}
+
+.milestoneCard {
+  position: absolute;
+  left: calc(100% + 10px);
+  width: 350px;
+  padding: 1rem;
+  font-size: 1rem;
+  white-space: normal;
+  color: var(--black);
+  background: var(--white);
+  border-radius: 0 10px 10px 10px;
+}
+
+/* Card Tail */
+.milestoneCard::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 16px 16px 0 0;
+  border-color: var(--white) transparent transparent transparent;
+}
+
+/* Cards Above Timeline */
+.cardWrapper:nth-child(odd) .milestoneCard {
+  top: -28px;
+  transform: translateY(-100%);
+  border-radius: 10px 10px 10px 0;
+}
+
+/* Cards Below Timeline */
+.cardWrapper:nth-child(even) .milestoneCard {
+  top: calc(100% + 28px);
+}
+
+.cardWrapper:nth-child(even) ::before {
+  top: -10px;
+  border-width: 16px 0px 0px 16px;
+  border-color: transparent transparent transparent var(--white);
+}
+
+/* MOBILE DEVICE RESPONSIVE STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 767px) {
+  .timelineContainer {
+    display: block;
+  }
+
+  .timelineContainer::before,
+  .timelineContainer::after {
+    width: 50px;
+  }
+
+  .timelineContainer::before {
+    left: 0;
+  }
+
+  .timelineContainer .info {
+    display: none;
+  }
+}

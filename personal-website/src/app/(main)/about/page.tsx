@@ -1,5 +1,6 @@
 import styles from '@/styles/aboutPage.module.css';
 import { JourneyTimeline } from '@/components/JourneyTimeline';
+import { JourneyTimelineExample } from '@/components/journeyTimelineExample';
 
 export default function About() {
   return (
@@ -15,7 +16,8 @@ export default function About() {
       {/* Journey Section */}
       <div className={styles.journeySection}>
         {/* Horizontal Timeline */}
-        <JourneyTimeline />
+        {/* <JourneyTimeline /> */}
+        <JourneyTimelineExample />
       </div>
 
       {/* Current Passion Section */}
