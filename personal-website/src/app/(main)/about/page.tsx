@@ -15,8 +15,7 @@ export default function About() {
 
       {/* Journey Section */}
       <div className={styles.journeySection}>
-        {/* Horizontal Timeline */}
-        {/* <JourneyTimeline /> */}
+        <h2 className={styles.headline}>Journey Timeline:</h2>
         <JourneyTimelineExample />
       </div>
 

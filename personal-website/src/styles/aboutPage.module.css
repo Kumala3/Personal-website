@@ -26,6 +26,12 @@
   font-size: var(--font-size-body-1);
 }
 
+.journeySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .currentPassionSection {
   display: flex;
   flex-direction: column;

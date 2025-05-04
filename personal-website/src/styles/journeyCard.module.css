@@ -1,7 +1,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 350px;
     min-height: 200px;
     height: 100%;
     background-color: white;
@@ -35,7 +35,7 @@
     font-weight: var(--font-weight-reg);
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 3;
     text-overflow: ellipsis;
     overflow: hidden;
 }

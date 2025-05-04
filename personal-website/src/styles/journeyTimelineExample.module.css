@@ -17,8 +17,9 @@
   position: relative;
   white-space: nowrap;
   max-width: 100%;
-  padding: 0 10px;
+  padding: 0 16px;
   margin: 0 auto;
+  height: fit-content;
   display: flex;
 }
 
@@ -28,36 +29,36 @@
 }
 
 .timelineWrapper::-webkit-scrollbar {
-  height: 120px;
+  height: 6px;
 }
 
 .timelineWrapper::-webkit-scrollbar-thumb,
 .timelineWrapper::-webkit-scrollbar-track {
-  border-radius: 92px;
+  border-radius: 16px;
 }
 
 .timelineWrapper::-webkit-scrollbar-thumb {
-  background: red;
+  background: var(--primary-color);
 }
 
 .timelineWrapper::-webkit-scrollbar-track {
-  background: red;
+  background: #b1b1b3;
 }
 
 .timelineWrapper {
   font-size: 0;
   padding: 17rem 0;
-  transition: all 10s;
+  transition: all 1s;
   overflow-x: scroll;
   scroll-snap-type: none;
-  scrollbar-color: red;
+  scrollbar-color: green;
 }
 
 .cardWrapper {
   position: relative;
   display: inline-block;
   list-style-type: none;
-  width: 250px;
+  width: 350px;
   height: 8px;
   background: green;
   scroll-snap-align: start;
@@ -97,14 +98,18 @@
 }
 
 .milestoneCard {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left: calc(100% + 10px);
-  width: 350px;
+  width: 450px;
   padding: 1rem;
   font-size: 1rem;
   white-space: normal;
   color: var(--black);
   background: var(--white);
+  border-width: 2px;
+  border-color: black;
   border-radius: 0 10px 10px 10px;
 }
 

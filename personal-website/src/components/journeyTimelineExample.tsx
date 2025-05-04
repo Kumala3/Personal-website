@@ -1,7 +1,7 @@
-import styles from "@/styles/journeyTimelineExample.module.css";
+import styles from '@/styles/journeyTimelineExample.module.css';
+import { JourneyCard } from './JourneyCard';
 
 export function JourneyTimelineExample() {
-
   /* JS CODE /*
   /*
   // VARIABLES
@@ -36,88 +36,41 @@ export function JourneyTimelineExample() {
       <section className={styles.timelineContainer}>
         <ol className={styles.timelineWrapper}>
           <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1934</time> At vero eos et accusamus et iusto odio
-              dignissimos ducimus qui blanditiis praesentium At vero eos et
-              accusamus et iusto odio dignissimos.
-            </div>
+            <JourneyCard
+              title="Childhood Curiosity"
+              wave={1}
+              description="Started opening up old computers brought by dad just to see how they worked under the hood and play around with cool electronics inside. Every week, I was googling more than 100 times about different parts of computer to find out how they work independently, together, what impact each component had on each other and much more!"
+              containerClassName={styles.milestoneCard}
+            />
           </li>
           <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1937</time> Proin quam velit, efficitur vel neque vitae,
-              rhoncus commodo mi. Suspendisse finibus mauris et bibendum
-              molestie. Aenean ex augue, varius et pulvinar in, pretium non
-              nisi.
-            </div>
+            <JourneyCard
+              title="First Lines of Code"
+              wave={2}
+              startYear="2021"
+              description="Built my first interactive web app with Django & Vanilla JS at age 13 — it was ugly, but it worked."
+              containerClassName={styles.milestoneCard}
+            />
           </li>
           <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1940</time> Proin iaculis, nibh eget efficitur varius,
-              libero tellus porta dolor, at pulvinar tortor ex eget ligula.
-              Integer eu dapibus arcu, sit amet sollicitudin eros.
-            </div>
+            <JourneyCard
+              title="High School"
+              wave={3}
+              startYear="2023"
+              endYear="2027"
+              description="Studying Math, Computer Science, Physics to get essential knowledge + understand how tech solves real problems."
+              containerClassName={styles.milestoneCard}
+            />
           </li>
           <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1943</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1946</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1956</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1957</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut
-              mauris felis, volutpat eget porta faucibus, euismod quis ante.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1977</time> Vestibulum porttitor lorem sed pharetra
-              dignissim. Nulla maximus, dui a tristique iaculis, quam dolor
-              convallis enim, non dignissim ligula ipsum a turpis.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>1985</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>2000</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
-          </li>
-          <li className={styles.cardWrapper}>
-            <div className={styles.milestoneCard}>
-              <time>2005</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
-            </div>
+            <JourneyCard
+              title="Diving into GenAI"
+              wave={4}
+              startYear="2022"
+              endYear="current"
+              description="Hooked by the potential of AI — now building, experimenting, and sharing insights."
+              containerClassName={styles.milestoneCard}
+            />
           </li>
           <li className={styles.cardWrapper}></li>
         </ol>

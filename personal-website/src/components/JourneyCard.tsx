@@ -1,6 +1,5 @@
 'use client';
 import styles from '@/styles/journeyCard.module.css';
-import { ReadFullButton } from '@/components/ui/buttons/ReadFullButton';
 
 interface JourneyCardProps {
   title: string;
@@ -8,6 +7,7 @@ interface JourneyCardProps {
   startYear?: string;
   endYear?: string;
   description: string;
+  containerClassName: string;
 }
 
 export function JourneyCard({
@@ -16,11 +16,12 @@ export function JourneyCard({
   startYear,
   endYear,
   description,
+  containerClassName,
 }: JourneyCardProps) {
   const handleOpenCard = () => {};
-
+  
   return (
-    <div className={styles.container}>
+    <div className={`${containerClassName}`}>
       <div className={styles.metaInfo}>
         <div className={styles.topLayout}>
           <h6>{title}</h6>
@@ -36,8 +37,6 @@ export function JourneyCard({
         )}
         <p className={styles.description}>{description}</p>
       </div>
-      {/* ReadFull Button */}
-      <ReadFullButton size="large" onClick={handleOpenCard} />
     </div>
   );
 }
